@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Makan Sari Rasa | Cita Rasa Nusantara, Hangatnya Kebersamaan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f2f8f3',
+                            100: '#e1f0e4',
+                            600: '#2b583a',
+                            700: '#1f422c',
+                            800: '#173322',
+                            900: '#0f2217',
+                        },
+                        amber: {
+                            gold: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <div class="bg-brand-700 text-white p-2 rounded-xl shadow-md">
+                    <i class="fa-solid fa-utensils text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-xl text-brand-800 tracking-tight block">SARI RASA</span>
+                    <span class="text-[10px] text-stone-500 uppercase tracking-widest block font-medium">Rumah Makan Keluarga</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-stone-600">
+                <a href="#beranda" class="hover:text-brand-600 transition">Beranda</a>
+                <a href="#tentang" class="hover:text-brand-600 transition">Tentang Kami</a>
+                <a href="#menu" class="hover:text-brand-600 transition">Menu Unggulan</a>
+                <a href="#fasilitas" class="hover:text-brand-600 transition">Fasilitas</a>
+                <a href="#promo" class="hover:text-brand-600 transition text-amber-600 font-semibold">Paket Hemat</a>
+                <a href="#lokasi" class="hover:text-brand-600 transition">Lokasi</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#reservasi" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-emerald-600/20 transition flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-calendar-check text-lg"></i> Reservasi Meja
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-stone-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-3 shadow-xl">
+            <a href="#beranda" class="block text-stone-700 font-medium py-1 mobile-link">Beranda</a>
+            <a href="#tentang" class="block text-stone-700 font-medium py-1 mobile-link">Tentang Kami</a>
+            <a href="#menu" class="block text-stone-700 font-medium py-1 mobile-link">Menu Unggulan</a>
+            <a href="#fasilitas" class="block text-stone-700 font-medium py-1 mobile-link">Fasilitas</a>
+            <a href="#promo" class="block text-amber-600 font-semibold py-1 mobile-link">Paket Hemat Keluarga</a>
+            <a href="#galeri" class="block text-stone-700 font-medium py-1 mobile-link">Galeri Suasana</a>
+            <a href="#reservasi" class="block text-stone-700 font-medium py-1 mobile-link">Reservasi</a>
+            <a href="#lokasi" class="block text-stone-700 font-medium py-1 mobile-link">Lokasi & Kontak</a>
+            <div class="pt-2">
+                <a href="#reservasi" class="block w-full text-center bg-emerald-600 text-white py-3 rounded-xl font-semibold shadow-md mobile-link">
+                    <i class="fa-solid fa-calendar-check mr-2"></i> Reservasi Meja
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-brand-900 text-white overflow-hidden">
+        <!-- Background Overlay Image with Gradient -->
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/90 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 border border-amber-500/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-star"></i> Destinasi Kuliner Keluarga #1 di Klapanunggal
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        Cita Rasa Nusantara, <span class="text-amber-400 italic">Hangatnya Kebersamaan</span>
+                    </h1>
+                    <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+                        Nikmati kelezatan Gurame Bakar Madu spesial dan Nasi Liwet otentik di tengah suasana pedesaan yang asri, sejuk, dan dilengkapi saung lesehan di atas kolam ikan.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="https://wa.me/6281298765432?text=Halo%20Rumah%20Makan%20Sari%20Rasa,%20saya%20ingin%20booking%20saung%20lesehan." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-emerald-900/50 transition flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> Booking Saung Sekarang
+                        </a>
+                        <a href="#menu" class="w-full sm:w-auto bg-white/10 hover:bg-white/25 text-white border border-white/20 px-8 py-4 rounded-2xl font-semibold backdrop-blur-sm transition text-center">
+                            Lihat Menu Pilihan
+                        </a>
+                    </div>
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <span class="block font-serif text-2xl sm:text-3xl font-bold text-amber-400">100%</span>
+                            <span class="text-xs text-stone-300">Bahan Segar Alami</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl sm:text-3xl font-bold text-amber-400">Asri</span>
+                            <span class="text-xs text-stone-300">Suasana Pedesaan</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl sm:text-3xl font-bold text-amber-400">4.9</span>
+                            <span class="text-xs text-stone-300">Kepuasan Pelanggan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-amber-500 to-emerald-600 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl text-stone-800">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Gurame Bakar Sari Rasa" class="rounded-2xl w-full h-72 sm:h-80 object-cover">
+                            <div class="p-4">
+                                <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Menu</span>
+                                <h3 class="font-serif font-bold text-xl text-brand-800 mt-2">Gurame Bakar Madu Spesial</h3>
+                                <p class="text-xs text-stone-500 mt-1">Disajikan lengkap dengan kremesan renyah, lalapan segar, dan sambal terasi istimewa.</p>
+                                <div class="mt-4 flex items-center justify-between border-t border-stone-100 pt-3">
+                                    <span class="text-emerald-700 font-bold text-lg">Paket Berempat Tersedia</span>
+                                    <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-lg font-semibold">Gratis Nasi Liwet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-amber-600 font-bold text-sm tracking-widest uppercase bg-amber-50 px-3 py-1 rounded-lg">Tentang Kami</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+                        Tempat Terbaik Menikmati Kuliner & Kehangatan Keluarga
+                    </h2>
+                    <p class="text-stone-600 leading-relaxed">
+                        Rumah Makan Sari Rasa hadir di Klapanunggal sebagai destinasi kuliner andalan keluarga. Kami memadukan resep otentik warisan Nusantara dengan suasana tempat makan saung bambu di atas kolam ikan yang tenang dan menyejukkan.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed">
+                        Setiap hidangan dimasak secara higienis menggunakan bahan-bahan segar pilihan berkualitas tinggi, memastikan cita rasa terbaik yang selalu dirindukan setiap kali Anda berkunjung bersama keluarga tercinta.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 p-4 bg-stone-50 rounded-2xl border border-stone-100">
+                            <div class="text-brand-600 text-xl"><i class="fa-solid fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-sm">Resep Otentik</h4>
+                                <p class="text-xs text-stone-500 mt-0.5">Bumbu rempah alami khas tradisional.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 bg-stone-50 rounded-2xl border border-stone-100">
+                            <div class="text-brand-600 text-xl"><i class="fa-solid fa-face-smile"></i></div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-sm">Ramah Anak</h4>
+                                <p class="text-xs text-stone-500 mt-0.5">Area luas & kolam ikan interaktif.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Images -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=600&q=80" alt="Suasana Saung Lesehan" class="rounded-2xl shadow-md w-full h-48 object-cover">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Hidangan Lezat" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                    </div>
+                    <div class="space-y-4 pt-6">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Interior Resto" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Kuliner Nusantara" class="rounded-2xl shadow-md w-full h-48 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Unggulan Section -->
+    <section id="menu" class="py-20 bg-brand-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-brand-100 px-3 py-1 rounded-lg">Menu Pilihan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-3">Menu Unggulan Kami</h2>
+                <p class="text-stone-600 mt-2">Cita rasa gurih, manis, dan pedas berpadu sempurna dalam setiap sajian istimewa khas Sari Rasa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-100 hover:shadow-xl transition group">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Gurame Bakar Madu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Juara Favorit</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif font-bold text-xl text-brand-900">Gurame Bakar Madu Spesial</h3>
+                            <span class="text-emerald-700 font-bold text-lg">Rp 85.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Ikan gurame ukuran besar pilihan, dibakar dengan olesan madu hutan asli dan rempah rahasia. Daging lembut, manis gurih meresap sempurna.
+                        </p>
+                        <div class="pt-2 flex items-center justify-between text-xs text-stone-500 border-t border-stone-100">
+                            <span><i class="fa-solid fa-utensils text-brand-600 mr-1"></i> Disertai Lalapan & Sambal</span>
+                            <span class="text-amber-600 font-semibold">Porsi 2-3 Orang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-100 hover:shadow-xl transition group">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=600&q=80" alt="Nasi Liwet Sunda" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Tradisional</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif font-bold text-xl text-brand-900">Nasi Liwet Sunda</h3>
+                            <span class="text-emerald-700 font-bold text-lg">Rp 12.000 / Porsi</span>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Nasi gurih harum beraroma serai, daun jeruk, dan teri medan pilihan. Dimasak tradisional dengan cita rasa gurih khas tatar pasundan.
+                        </p>
+                        <div class="pt-2 flex items-center justify-between text-xs text-stone-500 border-t border-stone-100">
+                            <span><i class="fa-solid fa-utensils text-brand-600 mr-1"></i> Cocok untuk Lauk Bakaran</span>
+                            <span class="text-emerald-600 font-semibold">Selalu Hangat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-100 hover:shadow-xl transition group">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Es Jeruk Segar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Minuman Favorit</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif font-bold text-xl text-brand-900">Es Jeruk Peras Segar</h3>
+                            <span class="text-emerald-700 font-bold text-lg">Rp 10.000</span>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Terbuat dari perasan jeruk segar pilihan asli, kaya vitamin C untuk menyegarkan santap siang Anda bersama keluarga.
+                        </p>
+                        <div class="pt-2 flex items-center justify-between text-xs text-stone-500 border-t border-stone-100">
+                            <span><i class="fa-solid fa-glass-water text-brand-600 mr-1"></i> Manis & Segar Alami</span>
+                            <span class="text-amber-600 font-semibold">Pitcher Tersedia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Hemat Keluarga Promo Section -->
+    <section id="promo" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-emerald-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-gradient-to-r from-brand-800 to-brand-700 border border-emerald-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="bg-amber-500 text-stone-900 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider inline-block">
+                            🔥 PROMO SPESIAL BULAN INI
+                        </span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+                            Paket Gurame Berempat <span class="text-amber-400">Hanya Rp 150.000,-</span>
+                        </h2>
+                        <p class="text-stone-300 text-base leading-relaxed">
+                            Makan puas bersama keluarga tanpa bikin kantong bolos! Nikmati paket komplit hemat untuk 4 orang dengan porsi melimpah dan rasa juara.
+                        </p>
+                        
+                        <ul class="space-y-3 text-stone-200">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                                <span>1 Ekor Gurame Bakar Madu Spesial (Ukuran Besar)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                                <span>4 Porsi Nasi Liwet Sunda Hangat</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                                <span>1 Pitcher Es Jeruk Segar</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                                <span>Lengkap dengan Lalapan, Sambal Terasi, & Kremesan Renyah</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-4">
+                            <a href="https://wa.me/6281298765432?text=Halo%20Rumah%20Makan%20Sari%20Rasa,%20saya%20ingin%20pesan%20Paket%20Gurame%20Berempat%20Rp%20150.000." target="_blank" class="bg-amber-500 hover:bg-amber-400 text-stone-900 px-8 py-4 rounded-2xl font-bold shadow-lg transition inline-flex items-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i> Pesan Paket Ini Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 text-center">
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-xl space-y-4">
+                            <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold block">Hemat Lebih Dari 25%</span>
+                            <div class="font-serif text-5xl font-bold text-white">Rp 150.000</div>
+                            <p class="text-xs text-stone-300">Berlaku untuk makan di tempat (dine-in) maupun dibawa pulang (takeaway).</p>
+                            <div class="p-4 bg-emerald-900/60 rounded-2xl border border-emerald-500/30 text-left text-xs space-y-2">
+                                <p class="font-bold text-amber-300"><i class="fa-solid fa-info-circle mr-1"></i> Catatan:</p>
+                                <p class="text-stone-200">Amankan saung lesehan favorit keluarga Anda dengan melakukan reservasi via WhatsApp terlebih dahulu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-brand-100 px-3 py-1 rounded-lg">Kenyamanan Ekstra</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-3">Fasilitas Saung & Resto</h2>
+                <p class="text-stone-600 mt-2">Kami menyediakan fasilitas lengkap untuk memastikan kunjungan Anda bersama keluarga terasa nyaman dan berkesan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Fasilitas 1 -->
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 hover:border-brand-600 transition group text-center space-y-4">
+                    <div class="w-16 h-16 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center mx-auto text-2xl group-hover:bg-brand-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-900">Saung Lesehan Privat</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Saung bambu tradisional di atas air dengan privasi optimal untuk bersantap santai bersama keluarga besar.
+                    </p>
+                </div>
+
+                <!-- Fasilitas 2 -->
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 hover:border-brand-600 transition group text-center space-y-4">
+                    <div class="w-16 h-16 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center mx-auto text-2xl group-hover:bg-brand-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-fish"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-900">Kolam Ikan Interaktif</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Kolam ikan luas berisi ikan warna-warni. Hiburan edukatif yang sangat disukai anak-anak sambil menunggu hidangan.
+                    </p>
+                </div>
+
+                <!-- Fasilitas 3 -->
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 hover:border-brand-600 transition group text-center space-y-4">
+                    <div class="w-16 h-16 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center mx-auto text-2xl group-hover:bg-brand-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-900">Parkir Luas & Aman</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Area parkir kendaraan yang luas dan aman, mampu menampung banyak mobil maupun rombongan bus pariwisata.
+                    </p>
+                </div>
+
+                <!-- Fasilitas 4 -->
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 hover:border-brand-600 transition group text-center space-y-4">
+                    <div class="w-16 h-16 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center mx-auto text-2xl group-hover:bg-brand-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-mosque"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-900">Mushola & Toilet Bersih</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Fasilitas ibadah mushola yang nyaman serta toilet bersih terjaga demi kenyamanan ibadah dan higienitas pengunjung.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri / Foto Kenangan Suasana Restoran -->
+    <section id="galeri" class="py-20 bg-brand-50/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-brand-100 px-3 py-1 rounded-lg">Momen & Kenangan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-3">Galeri Suasana Sari Rasa</h2>
+                <p class="text-stone-600 mt-2">Intip kehangatan kebersamaan keluarga dan suasana asri di restoran kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative overflow-hidden rounded-3xl shadow-md group h-72">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Suasana Keluarga" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-sm">Santap Bersama Keluarga Tercinta</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl shadow-md group h-72">
+                    <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=600&q=80" alt="Saung Lesehan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-sm">Saung Bambu di Atas Air</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl shadow-md group h-72">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Hidangan Lezat" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-sm">Gurame Bakar Madu Spesial</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl shadow-md group h-72">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Area Resto" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-sm">Kenyamanan Ruang Terbuka</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl shadow-md group h-72">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Minuman Segar" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-sm">Segarnya Es Jeruk Asli</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl shadow-md group h-72">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Suasana Asri" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-sm">Nuansa Pedesaan yang Asri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Reservasi Meja Interaktif -->
+    <section id="reservasi" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-900 to-brand-800 rounded-3xl shadow-2xl p-8 sm:p-12 text-white relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+                        <i class="fa-solid fa-calendar-days mr-1"></i> Form Reservasi Online
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold">Booking Meja atau Saung</h2>
+                    <p class="text-stone-300 text-sm mt-2">Isi formulir di bawah ini dan konfirmasikan pesanan Anda langsung via WhatsApp dengan mudah dan cepat.</p>
+                </div>
+
+                <form id="reservation-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Nama Lengkap</label>
+                            <input type="text" id="res-name" required placeholder="Contoh: Bpk. Budi Santoso" class="w-full bg-white/10 border border-white/20 rounded-2xl px-4 py-3.5 text-white placeholder-stone-400 text-sm focus:outline-none focus:border-amber-400 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Nomor WhatsApp</label>
+                            <input type="tel" id="res-phone" required placeholder="Contoh: 081234567890" class="w-full bg-white/10 border border-white/20 rounded-2xl px-4 py-3.5 text-white placeholder-stone-400 text-sm focus:outline-none focus:border-amber-400 transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Jumlah Tamu</label>
+                            <select id="res-guests" class="w-full bg-brand-800 border border-white/20 rounded-2xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-amber-400 transition">
+                                <option value="2 Orang">2 Orang</option>
+                                <option value="4 Orang (Paket Hemat)">4 Orang (Paket Gurame Berempat)</option>
+                                <option value="6-8 Orang (Keluarga)">6-8 Orang (Keluarga Besar)</option>
+                                <option value="10+ Orang (Rombongan)">10+ Orang (Rombongan / Acara)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Tanggal Kunjungan</label>
+                            <input type="date" id="res-date" required class="w-full bg-white/10 border border-white/20 rounded-2xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-amber-400 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Pilih Area Tempat</label>
+                            <select id="res-area" class="w-full bg-brand-800 border border-white/20 rounded-2xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-amber-400 transition">
+                                <option value="Saung Lesehan Privat">Saung Lesehan Privat</option>
+                                <option value="Meja Reguler Resto">Meja Reguler Resto</option>
+                                <option value="Area Dekat Kolam Ikan">Area Dekat Kolam Ikan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Catatan Tambahan / Menu Pesanan</label>
+                        <textarea id="res-notes" rows="3" placeholder="Contoh: Pesan 1 Paket Gurame Berempat, minta saung yang paling adem." class="w-full bg-white/10 border border-white/20 rounded-2xl px-4 py-3.5 text-white placeholder-stone-400 text-sm focus:outline-none focus:border-amber-400 transition"></textarea>
+                    </div>
+
+                    <div class="pt-2 text-center">
+                        <button type="submit" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-10 py-4 rounded-2xl shadow-xl transition flex items-center justify-center gap-3 mx-auto">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> Kirim Pesan Konfirmasi WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi & Kontak Section -->
+    <section id="lokasi" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-white px-3 py-1 rounded-lg border border-stone-200">Kunjungi Kami</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-3">Lokasi & Jam Operasional</h2>
+                <p class="text-stone-600 mt-2">Temukan lokasi Rumah Makan Sari Rasa dengan mudah dan rencanakan kunjungan akhir pekan Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Info Card -->
+                <div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-lg border border-stone-200 flex flex-col justify-between space-y-6">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-lg">Alamat Restoran</h4>
+                                <p class="text-stone-600 text-sm mt-1">Jl. Raya Utama No. 88, Klapanunggal, Kabupaten Bogor, Jawa Barat</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-lg">Jam Operasional</h4>
+                                <p class="text-stone-600 text-sm mt-1">Senin - Minggu : 10.00 - 21.00 WIB</p>
+                                <span class="text-xs text-emerald-600 font-semibold mt-0.5 inline-block"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Buka Setiap Hari</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-lg">Reservasi & Kontak</h4>
+                                <p class="text-stone-600 text-sm mt-1">WhatsApp: 0812-9876-5432</p>
+                                <p class="text-stone-600 text-sm">Instagram: @RMSariRasa_Official</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-stone-100">
+                        <a href="https://wa.me/6281298765432?text=Halo%20Rumah%20Makan%20Sari%20Rasa,%20saya%20ingin%20bertanya%20mengenai%20lokasi%20dan%20reservasi." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 rounded-xl font-bold shadow-md transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Hubungi via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map Mockup / Embed Simulation -->
+                <div class="lg:col-span-7 bg-white p-3 rounded-3xl shadow-lg border border-stone-200 overflow-hidden relative min-h-[350px] flex items-center justify-center">
+                    <!-- Simulated Map Background -->
+                    <div class="absolute inset-0 bg-stone-200 flex flex-col items-center justify-center p-6 text-center">
+                        <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl shadow-xl mb-4 animate-bounce">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-stone-800">Rumah Makan Sari Rasa</h3>
+                        <p class="text-xs text-stone-600 mt-1 max-w-sm">Jl. Raya Utama No. 88, Klapanunggal, Bogor</p>
+                        <a href="https://maps.google.com/?q=Klapanunggal+Bogor" target="_blank" class="mt-4 bg-brand-800 hover:bg-brand-900 text-white px-5 py-2.5 rounded-xl text-xs font-semibold shadow transition inline-flex items-center gap-2">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-stone-300 pt-16 pb-8 border-t border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-brand-800">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-emerald-600 text-white p-2 rounded-xl">
+                            <i class="fa-solid fa-utensils text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-white tracking-tight block">SARI RASA</span>
+                            <span class="text-[9px] text-stone-400 uppercase tracking-widest block">Rumah Makan Keluarga</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Destinasi kuliner terbaik di Klapanunggal dengan sajian Nusantara otentik dan suasana saung lesehan asri di atas kolam ikan.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Navigasi Cepat</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#beranda" class="hover:text-amber-400 transition">Beranda</a></li>
+                        <li><a href="#tentang" class="hover:text-amber-400 transition">Tentang Kami</a></li>
+                        <li><a href="#menu" class="hover:text-amber-400 transition">Menu Unggulan</a></li>
+                        <li><a href="#fasilitas" class="hover:text-amber-400 transition">Fasilitas Saung</a></li>
+                        <li><a href="#promo" class="hover:text-amber-400 transition">Paket Hemat Keluarga</a></li>
+                        <li><a href="#galeri" class="hover:text-amber-400 transition">Galeri Suasana</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Menu Pilihan</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><span class="text-stone-300">Gurame Bakar Madu Spesial</span></li>
+                        <li><span class="text-stone-300">Nasi Liwet Sunda</span></li>
+                        <li><span class="text-stone-300">Paket Gurame Berempat</span></li>
+                        <li><span class="text-stone-300">Es Jeruk Segar</span></li>
+                        <li><span class="text-stone-300">Aneka Sambal & Kremesan</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Jam Buka & Info</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Senin - Minggu<br>10.00 - 21.00 WIB
+                    </p>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Jl. Raya Utama No. 88, Klapanunggal, Bogor<br>WhatsApp: 0812-9876-5432<br>IG: @RMSariRasa_Official
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Rumah Makan Sari Rasa. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://instagram.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-instagram text-base"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-facebook text-base"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-tiktok text-base"></i></a>
+                    <a href="https://whatsapp.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp text-base"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281298765432?text=Halo%20Rumah%20Makan%20Sari%20Rasa,%20saya%20ingin%20reservasi%20meja." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110" aria-label="WhatsApp Reservasi">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript for Mobile Menu and Interactive Reservation Form -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Reservation Form Handler to WhatsApp
+        const reservationForm = document.getElementById('reservation-form');
+        reservationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('res-name').value;
+            const phone = document.getElementById('res-phone').value;
+            const guests = document.getElementById('res-guests').value;
+            const date = document.getElementById('res-date').value;
+            const area = document.getElementById('res-area').value;
+            const notes = document.getElementById('res-notes').value;
+
+            const message = `Halo Rumah Makan Sari Rasa,%0A%0ASaya ingin melakukan reservasi meja/saung:%0A- Nama: *${name}*%0A- No. WhatsApp: *${phone}*%0A- Jumlah Tamu: *${guests}*%0A- Tanggal: *${date}*%0A- Pilihan Area: *${area}*%0A- Catatan: *${notes || '-'}*%0A%0AMohon konfirmasinya, terima kasih!`;
+            
+            window.open(`https://wa.me/6281298765432?text=${message}`, '_blank');
+        });
+    </script>
+</body>
+</html>
