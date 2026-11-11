@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajar Wok - Chinese Food Halal & Autentik</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#fffbf2] text-neutral-800 antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-[#7f1d1d] text-white shadow-lg border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-[#7f1d1d] shadow-md">
+                    <i class="fa-solid fa-fire-burner text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-black tracking-wider text-amber-400">FAJAR WOK</h1>
+                    <p class="text-xs text-amber-200 tracking-widest uppercase">Chinese Food Halal & Autentik</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm">
+                <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
+                <a href="#tentang" class="hover:text-amber-400 transition">Tentang Kami</a>
+                <a href="#menu" class="hover:text-amber-400 transition">Menu Unggulan</a>
+                <a href="#testimoni" class="hover:text-amber-400 transition">Testimoni</a>
+                <a href="#kontak" class="hover:text-amber-400 transition">Kontak</a>
+            </nav>
+
+            <a href="https://wa.me/6281234567890?text=Halo%20Fajar%20Wok,%20saya%20mau%20pesan%20menu%20chinese%20food!" target="_blank" class="hidden sm:flex items-center space-x-2 bg-amber-500 hover:bg-amber-600 text-[#7f1d1d] font-bold px-5 py-2.5 rounded-full shadow-md transition transform hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Pesan Sekarang</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Beranda) -->
+    <section id="beranda" class="relative bg-[#7f1d1d] text-white py-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block">
+                    100% Halal & Premium Taste
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black leading-tight">
+                    Kenikmatan <span class="text-amber-400">Chinese Food</span> Otentik di Setiap Gigitan
+                </h1>
+                <p class="text-lg text-amber-100/90 leading-relaxed">
+                    Disajikan segar langsung dari wajan panas dengan teknik memasak tradisional berstandar tinggi. Porsi puas, rasa luar biasa, dijamin halal untuk seluruh keluarga.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#menu" class="bg-amber-500 hover:bg-amber-600 text-[#7f1d1d] font-extrabold px-8 py-4 rounded-xl text-center shadow-lg transition transform hover:-translate-y-0.5">
+                        Lihat Menu Favorit
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Fajar%20Wok,%20saya%20mau%20reservasi%20meja." target="_blank" class="border-2 border-amber-400 text-amber-300 hover:bg-amber-400 hover:text-[#7f1d1d] font-bold px-8 py-4 rounded-xl text-center transition">
+                        Reservasi Meja
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-full max-w-md bg-amber-500/10 border-4 border-amber-500/30 rounded-3xl p-4 shadow-2xl backdrop-blur-sm">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Chinese Food Spread" class="rounded-2xl w-full h-80 object-cover shadow-md">
+                    <div class="mt-4 bg-white text-neutral-900 p-4 rounded-xl shadow flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-bold text-red-700 uppercase">Paket Keluarga Bahagia</p>
+                            <p class="text-lg font-black">Hemat & Lengkap</p>
+                        </div>
+                        <span class="bg-red-700 text-white text-sm font-bold px-3 py-1.5 rounded-lg">Best Seller</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-red-700 uppercase tracking-widest">Tentang Fajar Wok</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-neutral-900">Tradisi Rasa Wok dengan Sentuhan Modern Halal</h3>
+                <p class="text-neutral-600 text-base">
+                    Didirikan oleh Fajar Nur Ramadhan pada tahun 2023, Fajar Wok berkomitmen menghadirkan cita rasa masakan oriental kelas restoran mewah dengan harga yang ramah di kantong dan jaminan kehalalan mutlak.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#fffbf2] p-8 rounded-2xl border border-amber-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-red-700 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-neutral-900 mb-3">100% Halal & Higienis</h4>
+                    <p class="text-neutral-600 text-sm leading-relaxed">
+                        Seluruh bahan baku dipilih dari supplier terpercaya yang tersertifikasi halal, diolah dengan standar kebersihan dapur yang sangat ketat.
+                    </p>
+                </div>
+
+                <div class="bg-[#fffbf2] p-8 rounded-2xl border border-amber-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-red-700 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-neutral-900 mb-3">Teknik Wok Hei Otentik</h4>
+                    <p class="text-neutral-600 text-sm leading-relaxed">
+                        Dimasak menggunakan api besar dengan wajan khusus untuk menghasilkan aroma asap khas oriental (Wok Hei) yang membangkitkan selera makan.
+                    </p>
+                </div>
+
+                <div class="bg-[#fffbf2] p-8 rounded-2xl border border-amber-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-red-700 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-neutral-900 mb-3">Porsi Berbagi Melimpah</h4>
+                    <p class="text-neutral-600 text-sm leading-relaxed">
+                        Sangat cocok untuk dinikmati bersama keluarga tercinta, acara kantor, maupun kumpul santai bersama sahabat dalam porsi sharing yang memuaskan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Unggulan -->
+    <section id="menu" class="py-20 bg-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-red-700 uppercase tracking-widest">Katalog Pilihan</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-neutral-900">Menu Unggulan Fajar Wok</h3>
+                <p class="text-neutral-600 text-base">Pilihan menu terfavorit yang selalu menjadi incaran para pelanggan setia kami setiap harinya.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80" alt="Nasi Goreng Yangchow" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-4 right-4 bg-amber-500 text-[#7f1d1d] font-black text-xs px-3 py-1.5 rounded-full shadow">Rp 38.000</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-xl font-bold text-neutral-900">Nasi Goreng Yangchow</h4>
+                            <span class="text-amber-500 text-sm font-semibold"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="text-neutral-600 text-sm">Nasi goreng oriental dengan campuran udang segar, ayam, kacang polong, dan wortel pilihan yang harum.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Fajar%20Wok,%20saya%20mau%20pesan%20Nasi%20Goreng%20Yangchow." target="_blank" class="block w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2.5 rounded-xl text-center text-sm transition shadow">
+                            Pesan Via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=80" alt="Fuyunghai Spesial" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-4 right-4 bg-amber-500 text-[#7f1d1d] font-black text-xs px-3 py-1.5 rounded-full shadow">Rp 42.000</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-xl font-bold text-neutral-900">Fuyunghai Spesial</h4>
+                            <span class="text-amber-500 text-sm font-semibold"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="text-neutral-600 text-sm">Omelet telur tebal isi cincangan ayam dan udang, disiram kuah asam manis kental yang segar menggugah selera.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Fajar%20Wok,%20saya%20mau%20pesan%20Fuyunghai%20Spesial." target="_blank" class="block w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2.5 rounded-xl text-center text-sm transition shadow">
+                            Pesan Via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Ayam Koloke Asam Manis" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-4 right-4 bg-amber-500 text-[#7f1d1d] font-black text-xs px-3 py-1.5 rounded-full shadow">Rp 40.000</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-xl font-bold text-neutral-900">Ayam Koloke Asam Manis</h4>
+                            <span class="text-amber-500 text-sm font-semibold"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="text-neutral-600 text-sm">Daging ayam fillet crispy berbalut tepung renyah, dipadu paprika, nanas segar, dan saus asam manis spesial.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Fajar%20Wok,%20saya%20mau%20pesan%20Ayam%20Koloke%20Asam%20Manis." target="_blank" class="block w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2.5 rounded-xl text-center text-sm transition shadow">
+                            Pesan Via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-red-700 uppercase tracking-widest">Kata Pelanggan</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-neutral-900">Apa Kata Mereka tentang Fajar Wok?</h3>
+                <p class="text-neutral-600 text-base">Kepuasan pelanggan adalah prioritas utama kami dalam menyajikan kuliner terbaik.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#fffbf2] p-8 rounded-2xl border border-amber-200 shadow-sm relative">
+                    <div class="flex text-amber-500 mb-4 space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-neutral-700 text-sm italic mb-6">
+                        "Porsinya bener-bener mantap buat makan bareng keluarga di rumah. Nasi goreng Yangchow-nya juara banget, aromanya khas dan halal pastinya!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-red-700 text-amber-300 font-bold rounded-full flex items-center justify-center">RD</div>
+                        <div>
+                            <p class="font-bold text-sm text-neutral-900">Rian Darmawan</p>
+                            <p class="text-xs text-neutral-500">Pelanggan Setia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#fffbf2] p-8 rounded-2xl border border-amber-200 shadow-sm relative">
+                    <div class="flex text-amber-500 mb-4 space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-neutral-700 text-sm italic mb-6">
+                        "Akhirnya nemuin Chinese food halal yang rasanya otentik banget di lidah. Ayam kolokenya garing di luar tapi lembut di dalam. Recommended!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-red-700 text-amber-300 font-bold rounded-full flex items-center justify-center">AS</div>
+                        <div>
+                            <p class="font-bold text-sm text-neutral-900">Siti Aisyah</p>
+                            <p class="text-xs text-neutral-500">Ibu Rumah Tangga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#fffbf2] p-8 rounded-2xl border border-amber-200 shadow-sm relative">
+                    <div class="flex text-amber-500 mb-4 space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-neutral-700 text-sm italic mb-6">
+                        "Pemesanan via WhatsApp cepat banget direspons, makanannya datang masih hangat dan porsinya lumayan banyak. Pasti bakal langganan terus."
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-red-700 text-amber-300 font-bold rounded-full flex items-center justify-center">BP</div>
+                        <div>
+                            <p class="font-bold text-sm text-neutral-900">Budi Prasetyo</p>
+                            <p class="text-xs text-neutral-500">Karyawan Swasta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Kontak -->
+    <footer id="kontak" class="bg-[#7f1d1d] text-white pt-16 pb-12 border-t border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-[#7f1d1d]">
+                        <i class="fa-solid fa-fire-burner text-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-black tracking-wider text-amber-400">FAJAR WOK</h3>
+                </div>
+                <p class="text-amber-100/80 text-sm leading-relaxed">
+                    Restoran Chinese Food Halal dan Autentik pilihan keluarga. Nikmati kelezatan masakan oriental berkualitas tinggi setiap hari.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-amber-400">Jam Operasional</h4>
+                <p class="text-amber-100/90 text-sm">Senin - Minggu: 10.00 - 22.00 WIB</p>
+                <p class="text-amber-100/90 text-sm">Melayani Dine-in, Takeaway, & Pesan Antar Online.</p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-amber-400">Hubungi Kami</h4>
+                <p class="text-amber-100/90 text-sm flex items-center space-x-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i>
+                    <span>Jl. Kuliner No. 1, Jakarta Pusat</span>
+                </p>
+                <p class="text-amber-100/90 text-sm flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-amber-400"></i>
+                    <span>+62 812-3456-7890</span>
+                </p>
+                <div class="pt-2">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Fajar%20Wok,%20saya%20mau%20tanya%20menu." target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 hover:bg-amber-600 text-[#7f1d1d] font-bold px-6 py-3 rounded-xl shadow-md transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Chat WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-amber-500/20 pt-6 text-center text-xs text-amber-200/70">
+            &copy; 2026 Fajar Wok - Fajar Nur Ramadhan. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
